@@ -1,33 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list_container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.list {
+  padding: 3em;
+  width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list_header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.list_header h1 {
+  font-weight: 400;
+}
+.list_header small {
+  color: #939393;
+}
+.item {
+  border-radius: 5px;
+  background-color: #FFF;
+  padding: 1em;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5em;
+}
+.add_item_button {
+  background-color: #13A6F8;
+  padding: 1em;
+  width: 100%;
+  color: #FFF;
+  margin-top: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add_item_modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 241, 241, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_item_content {
+  background-color: #FFF;
+  padding: 2em;
+  border-radius: 5px;
+}
+.add_item_content h2 {
+  font-weight: 350;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.add_item_content input {
+  border: 1px solid #ccc !important;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.3em;
+}
+.add_item_modal_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+.cancel_button, .add_button {
+  font-size: 1em;
+  padding: 0.7em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cancel_button {
+  border: 1px solid #ccc !important;
+}
+.add_button {
+  background-color: #CCC;
+  border: transparent;
+  color: #FFF;
+}
+.delete_icon {
+  float: right;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
 }
